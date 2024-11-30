@@ -1,0 +1,61 @@
+<!-- This is the item_search.html template -->
+ 
+{% extends "base.html" %}
+
+{% block head %}
+<title>{% block title %}Flask Boiler_Plate{% endblock title %}</title>
+
+{% assets "base_main_" %}
+<link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}"/>
+{% endassets %}
+{% endblock head %}
+
+{% block body %}
+<!-- The rest of your code here -->
+
+<section class="hero is-primary">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title is-1">
+                Welcome to Flask Quickstart Generator
+            </h1>
+            <h2 class="subtitle">
+                By eliminating repetitive tasks, you can focus on the core logic of your application.
+            </h2>
+            <label class="toggle-switch">
+                <input type="checkbox" id="dark-mode-toggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="content">
+            <h1></h1>
+            <h1>flask-boilerplate</h1>
+            <ul>
+                <li class=""><b>-v  for creating virtualenv</b></li>
+                <li class=""> <b>command for creating app => create-app </b> <i>demo_app</i></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+{% assets "main_js" %}
+<script src="{{ ASSET_URL }}"></script>
+{% endassets %}
+
+{% assets "bootstrap_js" %}
+<script src="{{ ASSET_URL }}"></script>
+{% endassets %}
+
+
+{% block footer %}
+<footer class="footer is-fixed-bottom">
+
+</footer>
+{% endblock footer %}
+{% endblock body %}
